@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 :root {
-
+    --banner-font: 'Comforter', cursive;
+    --create-account-color: #596D48;
+    --logo-color: #f2f2f2;
 }
 
 body {
@@ -13,5 +16,10 @@ body {
     flex-direction: column;
     background-image: url(winter-background.jpg);
     background-size: cover;
+    color: var(--logo-color);
     flex: 1 0 30%;
+}
+
+#odin-logo {
+    font-family: var(--banner-font);
 }
