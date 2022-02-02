@@ -83,6 +83,7 @@ fieldset {
     height: auto;
     box-shadow: 0 4px 2px -2px gray;
     margin: 2px 0px 2px 0;
+    padding-left: 5%;
 }
 
 label, input {
@@ -91,6 +92,16 @@ label, input {
     padding: 5px;
     max-width: 350px;
 
+}
+
+input {
+    border-radius: 7px;
+    border-color: var(--form-color);
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 4px 4px 2px gray;
 }
 
 .form-box {
