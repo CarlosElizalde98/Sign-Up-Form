@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Heebo&display=swap');
 :root {
     --form-font: 'Heebo', sans-serif;
-    --banner-font: 'Comforter', cursive;
+    --banner-font: 'Comforter', cursive, sans-serif;
     --create-account-color: #596D48;
     --logo-color: #f2f2f2;
     --form-color: #e0e0d1;
@@ -78,8 +78,29 @@ form{
 
 fieldset {
     background-color: var(--fieldset-color);
-    width: 100%;
+
     height: auto;
     box-shadow: 0 4px 2px -2px gray;
-    margin: 0 2px 2px 0;
+    margin: 2px 0px 2px 0;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1 1 auto;
+    
+}
+
+#formbox-organizer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

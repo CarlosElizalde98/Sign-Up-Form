@@ -30,20 +30,27 @@
         <form action="post">
             <fieldset>
                 <h1>Let's do this!</h1>
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="number" name="phoneNumber" id="phoneNumber">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-                <label for="confirm">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm" id="confirm">
-                <button type="submit" id="create-account">Create Account</button>
+                <div id="formbox-organizer">
+                    <div class="form-box">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div class="form-box">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastname" id="lastName">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" name="phonenumber" id="phoneNumber">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="confirm" id="confirm">
+                    </div>
+                </div>
             </fieldset>
+                <button type="submit" id="create-account">Create Account</button>
         </form>
 
         <p id="login">Already have an account? <a href="index.html">Log in</a></p>
