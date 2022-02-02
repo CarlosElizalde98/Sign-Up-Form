@@ -8,6 +8,7 @@
     <title>Sign Up Form</title>
 </head>
 <body>
+    
     <div id="banner-container">
         <div id="logo-container">
             <img src="odin-lined.png" alt="odin-logo">
@@ -15,32 +16,34 @@
         </div>
         <footer>Photo by Geoffrey Bombauch on <a href="https://unsplash.com/photos/_RUA51ibBzw">Unsplash</a></footer>
     </div>
+
     <div id="form-container">
-        <h1>This is not a real online service! You know you need something 
-            like this in your life to help you realize your deepest dreams.
-            Sign up now to get started!
-        </h1>
-        <h1>You know you want to.</h1>
+        <div class="intro-container">
+            <h1>This is not a real online service! You know you need something 
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started!
+            </h1>
+            <h1>You <em>know</em> you want to.</h1>
+        </div>
+
+    
         <form action="post">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName">
-
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
-
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-
-            <label for="phoneNumber">Phone Number</label>
-            <input type="number" name="phoneNumber" id="phoneNumber">
-
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-
-            <label for="confirm">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm" id="confirm">
-
-            <button type="submit" id="create-account">Create Account</button>
+            <fieldset>
+                <h1>Let's do this!</h1>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" name="phoneNumber" id="phoneNumber">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm">CONFIRM PASSWORD</label>
+                <input type="password" name="confirm" id="confirm">
+                <button type="submit" id="create-account">Create Account</button>
+            </fieldset>
         </form>
 
         <p id="login">Already have an account? <a href="index.html">Log in</a></p>

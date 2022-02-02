@@ -4,9 +4,11 @@
     --banner-font: 'Comforter', cursive;
     --create-account-color: #596D48;
     --logo-color: #f2f2f2;
+    --form-color: #e0e0d1;
+    --fieldset-color: #ffffff;
 }
 
-body {
+body, html {
     display: flex;
     justify-content: flex-start;
     min-height: 100vh;
@@ -32,6 +34,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+#form-container {
+    background-color: var(--form-color);
+    width: 100%;
+}
 
 #logo-container img {
     width: auto;
@@ -45,6 +51,14 @@ body {
     font-family: var(--banner-font);
 }
 
+.intro-container {
+    padding: 10px;
+    margin: 10%;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: var(--form-font);
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -55,4 +69,17 @@ footer {
     justify-content: center;
     font-family: var(--form-font);
     font-size: 0.8rem;
+}
+
+form{
+    font-family: var(--form-font);
+    box-sizing: border-box;
+}
+
+fieldset {
+    background-color: var(--fieldset-color);
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 2px -2px gray;
+    margin: 0 2px 2px 0;
 }
