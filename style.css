@@ -6,6 +6,7 @@
     --logo-color: #f2f2f2;
     --form-color: #e0e0d1;
     --fieldset-color: #ffffff;
+    --error-color: #ff6666;
 }
 
 body, html {
@@ -132,4 +133,13 @@ input:focus {
     font-family: inherit;
     width: 200px;
     height: 50px;
+}
+
+.error {
+    border-color: var(--error-color);
+}
+
+.error-text {
+    color: var(--error-color);
+    font-weight: bold;
 }
