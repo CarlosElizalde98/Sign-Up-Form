@@ -158,3 +158,12 @@ a:visited {
 #login {
     margin: 25px 0 0 50px;
 }
+
+.help {
+    display: none;
+}
+
+.error .help {
+    display: block;
+    color: var(--error-color);
+}

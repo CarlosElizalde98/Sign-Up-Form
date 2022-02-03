@@ -30,27 +30,28 @@
         </div>
 
     
-        <form action="post" id="myForm">
+        <form action="post" id="myForm" novalidate>
             <fieldset>
                 <h1>Let's do this!</h1>
                 <div id="formbox-organizer">
                     <div class="form-box">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName">
+                        <input type="text" id="firstName" name="firstName" required>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
+                        <span class="help">Please enter a valid email</span>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                         <span id="password-text"></span>
                     </div>
 
                     <div class="form-box">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastname" id="lastName">
+                        <input type="text" name="lastname" id="lastName" required>
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" name="phonenumber" id="phoneNumber">
+                        <input type="tel" name="phonenumber" id="phoneNumber" placeholder="Optional">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <input type="password" name="confirm" id="confirm" required>
                     </div>
                 </div>
             </fieldset>
